@@ -99,7 +99,7 @@ body {
 }
 .title small a{
     
-    color: #000;
+    color:  #5c6d6b;
     
 }
 
@@ -116,10 +116,16 @@ small a:hover {
    
    
 }
+
 .mr-3 {
     width: 160px;
     height: 120px;
     margin-top: 15px;
+    border-radius: 100px;
+}
+.mr-3:hover {
+    transform: translateY(2px);
+    box-shadow: 0 4px 10px #5c6d6b;
 }
 .mt-0 {
     line-height: 60px;

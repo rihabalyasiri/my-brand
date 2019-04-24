@@ -80,12 +80,15 @@ body {
     text-decoration: none;
 }
 
-.about h1 {
+.title h1 {
     font-weight: normal;
-    font-size: 300px;
+    font-size: 300%;
     color: #ad0d69;
     padding-bottom: 30px;
+    display: block;
+    font-family: 'Roboto',sans-serif;
 }
+
 .title {
     position: relative;
 }
@@ -97,7 +100,7 @@ body {
 }
 .title small a{
     
-    color: #000;
+    color:  #5c6d6b;
     
 }
 
@@ -109,7 +112,22 @@ small a:hover {
 .about h2 {
     
     font-family: 'Courgette', cursive;
+    margin-top: 40px;
+    margin-bottom: 10px;
     
+}
+.about p {
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+}
+.udemy{
+    text-decoration: none;
+    
+}
+.udemy:hover {
+    text-decoration: none;
+    color: #ad0d69;
 }
 
 
@@ -156,7 +174,7 @@ small a:hover {
     height: 100px;
     background-color: #16010c;
     box-sizing: border-box;
- 
+
     
 }
 .fa {
@@ -217,6 +235,7 @@ small a:hover {
 
 
 
+
 .group:before,
 	.group:after {
 		content:““;
@@ -228,8 +247,6 @@ small a:hover {
 	.group {
 		zoom:1;
 	}
-
-
 
 
 
