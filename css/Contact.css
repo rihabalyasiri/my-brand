@@ -1,0 +1,253 @@
+/* purpule color : #ad0d69
+   dark purpule color: #381f2d
+   light gray color: #f2f2f2
+*/
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Abel', sans-serif;
+    font-size: medium;
+}
+
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#navigation-menu {
+    background-color: #fff;
+    padding: 10px;
+    width:100%;
+    margin: 0 auto;
+    height: 70px;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 100;
+     padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 200px;
+     border-bottom: 2px solid #0bc6ad;
+   
+}
+
+#logo {
+    font-family:'Passion One', cursive;
+    font-size: 300%;
+    font-weight: bold;
+    float:left;
+    color: #ad0d69;
+    text-decoration: none;
+}
+.logo {
+    font-family:'Passion One', cursive;
+    font-size: 150%;
+    font-weight: normal;
+    float:left;
+    color: #ad0d69;
+    text-decoration: none;
+    
+}
+
+.logo:hover,#logo:hover {
+    text-decoration: none;
+    color:  #ad0d69;
+    opacity: 0.9;
+}
+.site-nav .btn-home {
+    padding-left: 150px;
+}
+
+.site-nav a {
+    text-decoration: none;
+    float: left;
+    padding-top: 10px;
+    padding-right: 60px;
+    color: #420126;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 15px;
+}
+
+
+.site-nav li{
+    
+    list-style: none;
+    
+}
+.site-nav a:hover {
+    color: #ff0594;
+    text-decoration: none;
+}
+.title h1{
+    font-weight: normal;
+    font-size: 300%;
+    color: #ad0d69;
+    padding-top: 100px;
+    
+}
+.title p {
+    font-size: 250%;
+    color: #000;
+    font-family: 'Handlee', cursive;
+    
+    position: absolute;
+    padding-top: 40px;
+    
+    
+    
+}
+.title small a{
+    color: #000;
+}
+small a:hover {
+    color: #ad0d69;
+    text-decoration: none;
+}
+form {
+   box-sizing: border-box;
+    
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+   
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container{
+    position: relative;
+  border-radius: 5px;
+  padding: 20px;
+    padding-bottom: 130px;
+    box-sizing: border-box;
+    
+ 
+}
+
+#footer {
+    position: absolute;
+     bottom: 0;
+    float: left;
+    width: 100%;
+    height: 100px;
+    background-color: #16010c;
+    box-sizing: border-box;
+    
+}
+
+.fa {
+  padding: 10px 10px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+   margin: 15px 2px;
+   border-radius: 50%;
+    box-sizing: border-box;
+   
+    
+}
+
+.fa:hover {
+    opacity: 0.7;
+    text-decoration: none;
+}
+.fa-twitter {
+  background: #f2dce7;
+  color: #16010c ;
+    margin-left: 600px;
+}
+.fa-linkedin {
+  background: #f2dce7;
+  color: #16010c ;
+}
+.fa-facebook {
+  background: #f2dce7;
+  color: #16010c ;
+}
+.copyright {
+    
+    text-align: center;
+    color: #f2dce7;
+    
+}
+
+.copyright a {
+    text-decoration: none;
+    color: #f2dce7;
+    margin-bottom: 10px;
+}
+
+.copyright a:hover {
+    color:#ff0594;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+.group:before,
+	.group:after {
+		content:““;
+		display:table;
+	}
+	.group:after {
+		clear:both;
+	}
+	.group {
+		zoom:1;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
