@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+    <head>
+        <title>RIHAB ALYASIRI</title>
+
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="css/footer-blog.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Abel|Passion+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Abel|Passion+One|Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Abel|Courgette|Passion+One|Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Kalam|Neuton" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
+
+
+
+
+    </head>
+
+    <body>
+        
+       <div class="share-social-media">
+             
+           <a href="#"> <div class="ssm ssm-twitter"></div></a>
+           <a href="#"> <div class="ssm ssm-linkedin"></div> </a>
+           <a href="#"> <div class="ssm ssm-xing"></div> </a>
+        
+        </div>
+            
+            
+            <header id="navigation-menu">
+              <div class="logo-box" ><a href="Home.html"id="logo" >RIHAB </a> <a href="Home.html" class="logo">ALYASIRI</a> </div>  
+    
+                <nav class="site-nav">
+                    
+                  <ul class="group"> 
+                  <li> <a href="Home.html" class="btn-home">HOME</a></li>
+                    <li><a href="Blogg.html">BLOG</a></li>
+                    <li><a href="About.html">ABOUT</a></li>
+                    <li><a href="Contact.html">CONTACT</a></li>
+                  </ul>
+                </nav>
+
+            </header>
+        
+             <div class="sub-bar">
+            
+                <h1>BLOG</h1>
+                 <small><a href="Home.html">HOME</a> / <a href="Blogg.html"> BLOG</a> / <a> CSS</a> / <a> FOOTER BLOG</a></small>
+            
+            </div>
+        
+        <div class="container">
+        
+                
+       
+            <div class="blog-text">
+                
+                                <h2>What is the footer &#40;Navigation &#45; bar&#41; of a web page?</h2>
+                <div class="main-image-box">
+                
+                    <div class="blog-main-image">
+                
+                    </div>
+                
+                    
+                    
+                   
+                    
+                 <small class="image-description">this photo taken by ...</small>
+                    
+                </div>
+                
+            
+                <p>Footer is the buttom of the page and it has the part of copyright or the address and contact of the company. One of the most problem that a large number of programmer facing it including me at my begining is to set the footer on the buttom of the page. It frustrate all the programmer because the footer is depends on the content so what I mean when your page is not finish and you did write juste some sentences the footer will set not at the bottom also when your code is right and this do FRUSTRATE .</p>
+                <span class="special-title">Content :</span>
+                <ul>
+                
+                    <li>logo of the company.</li>
+                    <li>links to another pages within the website.</li>
+                    <li>social media accounts, thant belongs to the company/owner.</li>
+                    <li>terms of user :it converns the use of the website by visitors.</li>
+                    <li>privacy of policy : it fullfills a legal requirements to protect customer or clients privacy.</li>
+                    <li>newsletter registeration.</li>
+                
+                </ul>
+                <p>You do not need to put all of the content on your footer and make it messy... be carefull! always try to keep it simple, good to attract the eyes of the clients/visitors on it and style it with dark color or photo as you like just to make it different from the content of the web page.</p>
+                <h2>How to code it on HTML and CSS and how to set it on the bottom of the website?</h2>
+                <p>As a beginer the footer will be your nightmare :&#40; sorry for saying that but this is the truth, because if you position it false it will never set at the bottom.  And <strong>  YOU </strong> should be aware that, when the page contains not much information, the footer will not set at the bottom till you add more information for the whole page like text or images, then you will see by default the footer down.</p>
+                <div class="blog-left-image "></div>
+                <p>Then what is the code of the footer? Above is the code in HTML &#40; later on in CSS &#41; : &ldquo; footer tags &ldquo; presents the parent tag, that contains all the details that we are previecly describe, &ldquo; paragraph tag &ldquo; represents the child element, that contains text of the copyright and so on.</p>
+                <span class="special-title">Now the most exciting part how to set it on the bottom of the page</span>
+               <p> well, let's think a moment : the paragraph tag &lt; p &gt;  &lt; &frasl; p &gt; from the image above is the child element of the footer, right? So the footer is a child element of which element?
+                Did you got it, right...... the footer is a child element of the body so that why we must position the footer relatively to the body and set it on the bottom.</p>
+                <div class="left-image"></div>
+                <div class="left-image extra-left group"></div>
+                <p class="group">As you can see above in the<strong > body </strong>  rule, it has the <strong>position </strong>property with a value of <strong>relative </strong>and in the <strong> footer </strong>rule, it has the <strong>position </strong> property too with the value of <strong> absolute </strong>, imagine that the body is a big frame of photo and the footer is a small photo and you are trying to positing it on the bottom of the frame depending on the position of the frame &#40; body &#41;, so the position properties with value relative and absolute they always work together: absolute depending on relative but with this properties will not set at the bottom, because we need the property of <strong>bottom </strong> with value of zero, with this property we are just telling our browser to put the footer at the bottom of the body &#40; Site &#41; please and with the property <strong>float </strong> with value of <strong>left </strong> you can set it on the left of the bottom.  </p>
+                <p>Well, we reached at the end of this blog I hope you learned how to deal with the footer of your own site and if you are facing any problem you can always contact me .... thanks for reading this blog.</p>
+            
+            </div>
+
+           
+        
+        </div>
+        
+        
+     
+        <div  id="footer">
+             <div class="social-media">
+               
+               <a href="https://twitter.com/rihab81485313"> <div class="sm sm-twitter"></div></a>
+             
+                <a href="https://www.linkedin.com/in/rihab-alyasiri/"><div class="sm sm-linkedin"></div> </a> 
+             <a href="https://www.xing.com/profile/Rihab_Alyasiri/cv"> <div class="sm sm-xing"></div></a>
+               <a href="https://github.com/rihabalyasiri"> <div class="sm sm-github"></div></a>
+             
+        </div>
+
+        
+            <p class="copyright">Copyright &copy; 2019 <a href="Home.html">Rihab Al-yasiri</a></p>
+
+        
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+            
+
+        
+
+    </body>
+</html>
+
