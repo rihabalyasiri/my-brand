@@ -169,7 +169,7 @@ small a:hover {
 .myphoto {
     float: right;
     width: 36rem;
-    height: 43rem;
+    /*height: 43rem; stretches image in gecko */
     margin-top: 27rem;
     border-radius: .5rem;
     box-shadow: 0 1rem 2rem rgba(0,0,0,.8);
