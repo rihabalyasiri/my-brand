@@ -74,6 +74,7 @@ body {
     height: 100%;
     font-family: 'Abel', sans-serif;
     box-sizing: border-box;
+    
  
  
 }
@@ -83,6 +84,7 @@ body {
 html {
     font-size: 62.5%;
     position: relative;
+   
    
       
 }
@@ -140,6 +142,7 @@ html {
     padding-top: 4rem;
     padding-bottom: 30rem;
     position: relative;
+  
 
    
     
@@ -151,12 +154,12 @@ html {
     position: absolute;
     top: 7rem;
     height: 13rem;
-    width: 40rem;
+    width: 90rem;
     margin-top: 5rem;
     z-index: 400;
     
     h1 {
-        font-weight: 400;
+    font-weight: 400;
     font-size: 5rem;
     color: $color-secondary;
     padding-top: 5rem;
@@ -164,31 +167,39 @@ html {
     display: flex;
     justify-content:center;
     align-items:center;
+    float: left;
+        padding-left: 14rem;
 
     }
     
     small {
-        position: absolute;
+    position: absolute;
     bottom: .5rem;
     left: 14rem;
     display: flex;
     align-items:center;
+
+        
     
     a{
     
     color: $color-dark-gray ;
     font-size: 1.2rem;
         
-    &:hover {
+        &:hover {
     color: $color-primary;
     text-decoration: none;
+    
+        }
+        
+        
+    
 }
     
 }
 
         
     }
-}
 
 
 
@@ -197,6 +208,7 @@ html {
     padding-bottom: 6rem;
     display: block;
     width: 84rem;
+
    
    
 }
@@ -245,6 +257,7 @@ html {
     background-repeat: no-repeat;
     background-size: contain;
     border: .3rem solid #007575;
+    border-top: none;
 }
 .ssm-xing:hover {
     transform: translateX(.3rem);
@@ -255,34 +268,25 @@ html {
 .blog-text {
     
     padding-top: 20rem;
-}
-main-image-box {
-    position: relative;
-      height: 45rem;
-    width: 80rem;
-}
-
-.blog-main-image {
     
-    height: 40rem;
+    .main-image {
+    
     width: 80rem;
-    background-image: url(../images/internet-keyboard-laptop-109371.jpg);
-    background-size: cover;
+    height: 40rem;
+    background-image: url(../images/number-system.png);
+    background-size: contain;
+    background-repeat: no-repeat;
     margin-bottom: 4rem;
     margin-top: 4rem;
+    height: 40rem;
  
     
-    
+    }
+
 }
 
-.image-description {
-    font-size: 1.4rem;
-    padding-left: 20rem;
-    position: absolute;
-    bottom: 2rem;
-        
-   
-}
+
+
 .blog-text h2 {
     
     line-height: 6rem;
@@ -293,7 +297,6 @@ main-image-box {
 }
 
 .blog-text p,
-.blog-text ul,
 .blog-text h4{
     
     font-size: 2.2rem;
@@ -301,23 +304,18 @@ main-image-box {
     padding-bottom: 2rem;
     padding-top: 2rem;
 }
-.blog-text li {
-    list-style:circle inside ;
-  
-    
-}
+
+
 .blog-text h4 {
     
     padding-top: 2rem;
     padding-bottom: 1rem;
 }
-.blog-text li {
-    padding-left: 2rem;
-}
-.blog-left-image {
+
+.second-image {
     height: 20rem;
     width: 80rem;
-    background-image: url(../images/footer-blog.PNG);
+    background-image: url(../images/binarytodecimal.png);
     background-repeat: no-repeat;
     background-size:contain;
     margin-bottom: 3rem;
@@ -327,23 +325,20 @@ main-image-box {
 .special-title {
     font-size: 3rem;
      font-family: 'Merienda', cursive;
-    color: #077f75;
+    color: $color-secondary;
     padding-bottom: 4rem;
    
     
 }
-.left-image {
-    width: 36rem;
-    height: 25rem;
-    background-image: url(../images/body-code.PNG);
-    background-size: content;
-    float: left;
-    margin-right: 4rem;
-    margin-bottom: 4rem;
+.third-image {
+    height: 20rem;
+    width: 80rem;
+    background-image: url(../images/binary.PNG);
+    background-repeat: no-repeat;
+    background-size:contain;
+    margin-bottom: 3rem;
 }
-.extra-left {
-    background-image: url(../images/footer-code.PNG);
-}
+
 
 
 

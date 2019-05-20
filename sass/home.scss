@@ -1,5 +1,5 @@
 
-$color-primary: #ffe11c;
+$color-primary: #f1c40f;
 $color-secondary:#0c6b5d;
 
 $color-white:#fff;
@@ -12,6 +12,7 @@ $font-abel:'Abel', sans-serif;
 $font-nunito:'Nunito', sans-serif;
 $font-raleway:'Raleway', sans-serif;
 $font-roboto:'Roboto',sans-serif;
+$font-josefin:'Josefin', sans-serif;
 
 
 
@@ -26,135 +27,6 @@ $font-roboto:'Roboto',sans-serif;
     @include upTodown(0s);
     color: $color-primary;
     text-decoration: none;
-}
-
-
-
-
-*,
-*::after,
-*::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-}
-body {
-    position: relative;
-    height: 100%;
-    padding: 2%;
-    font-family:$font-abel;
-    box-sizing: border-box;
-}
-html {
-    font-size: 62.5%;
-}
-
-
-
-.navigation-menu {
-    padding: 1%;
-    width:100%;
-    margin: 0 auto;
-    height: 95vh;
-    display: block;
-    padding-left: 4%;
-    padding-right: 4%;
-    box-shadow: 0 .5% 1% rgba($color-black,.6);
-    background-image: linear-gradient(to bottom, rgba($color-black,0.7),rgba($color-black,0.7)), url(../images/code-coding-data-574071.jpg);
-    background-size: cover;
-    
-    &__logo-box {
-        
-        &__logo1 {
-            
-            @include style-logo(6rem);
-              
-        }
-        &__logo2 {
-            
-            @include style-logo(3rem);
-       
-        }
-
-     }
-
-    &__primary-heading {
-        width: 100%;
-        height: 95vh;
-
-        background-position: top;
-        background-size: cover;
-        background-repeat: no-repeat;
-        position: relative;
-        z-index: 200;
-        
-        &__text {
-            color: $color-white;
-            font-family: 'Josefin Sans', sans-serif;
-            animation: appearWords 5s 1s ease-out backwards;
-            position: absolute;
-            top: 50%;
-            left: 60%;
-            transform: translate(-50%,-50%);
-            width: 100%;
-            
-         &__main {
-            text-transform: uppercase;
-            font-size: 4.5rem;
-            font-weight: 800;
-            letter-spacing: 3rem;
-            display: block;
- 
-    
-    
-            }
-         &__sub {
-            text-transform: uppercase;
-            font-size: 1.5rem;
-            font-weight: 200;
-            letter-spacing: 1rem;
-            display: block;
-            margin-top: 3rem;
-            padding-left: 6rem;
-         }
-    
-        }
-    } 
-}
-
-
-.btn {
-    display: inline-block;
-    height: 5rem;
-    width: 23rem;
-    position: absolute;
-    top: 70%;
-    left: 40%;
-   
-    
-    
-    & a {
-      color: $color-black;
-        
-        &:link {
-            text-decoration: none;
-            text-transform: uppercase;
-            padding: 1rem 1.5rem;
-            border-radius: 10rem;
-            transition: all .3s;
-            animation: appearWords .5s 2s ease-out backwards;
-            font-size: 1.6rem;
-            display: inline-block;
-            background-color: $color-primary;
-
-        }
-    }
-        &:hover{
-            animation: shake 2s ease backwards;
-            color: $color-black;
-   
-        }
-
 }
 
 @keyframes shake {
@@ -198,23 +70,159 @@ html {
 
 
 
+
+
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    
+}
+body {
+    position: relative;
+    height: 100%;
+    padding: 2% 0 0 2%;
+    box-sizing: border-box;
+    
+}
+html {
+    
+    font-size: 62.5%;
+    
+}
+
+
+
+.navigation-menu {
+    padding: 1%;
+    width:100%;
+    margin: 0 auto;
+    height: 95vh;
+    display: block;
+    padding-left: 4%;
+    padding-right: 4%;
+    box-shadow: 0 .5% 1% rgba($color-black,.6);
+    background-image: linear-gradient(to bottom, rgba($color-black,0.7),rgba($color-black,0.7)), url(../images/code-coding-data-574071.jpg);
+    background-size: cover;
+    
+    &__logo-box {
+        
+        &__logo1 {
+            
+            @include style-logo(6rem);
+              
+        }
+        &__logo2 {
+            
+            @include style-logo(3rem);
+       
+        }
+
+     }
+
+    &__primary-heading {
+        width: 100%;
+        height: 95vh;
+
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        z-index: 200;
+        
+        &__text {
+            color: $color-white;
+            font-family: $font-abel;
+            animation: appearWords 2s 1s ease-out backwards;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 90rem;
+            
+         &__main {
+            text-transform: uppercase;
+            font-size: 5rem;
+            font-weight: 800;
+            letter-spacing: 3rem;
+            display: block;
+ 
+    
+    
+            }
+         &__sub {
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            font-weight: 200;
+            letter-spacing: 1rem;
+            display: block;
+            margin-top: 3rem;
+            padding-left: 6rem;
+         }
+    
+        }
+    } 
+}
+
+
+.btn {
+    display: inline-block;
+    height: 5rem;
+    width: 23rem;
+    position: absolute;
+    top: 70%;
+    left: 40%;
+   
+    
+    
+    & a {
+      color: $color-black;
+       
+        
+        &:link {
+            text-decoration: none;
+            text-transform: uppercase;
+            padding: 1rem 1.5rem;
+            border-radius: 10rem;
+            transition: all .3s;
+            animation: appearWords .5s 2s ease-out backwards;
+            font-size: 1.6rem;
+            display: inline-block;
+            background-color: $color-primary;
+
+        }
+    }
+        &:hover{
+            animation: shake 2s ease backwards;
+            color: $color-black;
+   
+        }
+
+}
+
+
+
 .section-box {
-    height:5.5rem;
+    height:7rem;
     width:25rem;
     border-bottom: .2rem solid $color-primary;
     position: absolute;
     position: relative;
     left:42%;
     margin-top: 7%;
-    margin-bottom: 7%;
+    margin-bottom: 10%;
 
     
     &__section-title {
     color:$color-secondary;
     text-align: center;
     text-transform: uppercase;
-    font-size: 4rem;
+    font-size: 5rem;
     @include upTodown(1s);
+        padding-bottom: 4rem;
    
         
     
@@ -284,7 +292,7 @@ background: linear-gradient(to right, #71B280, #134E5E);
 
 .container {
     max-width: 94rem;
-    height: 95vh;
+    height: 110vh;
     margin: 0 auto;
     padding-left: 4rem;
     padding-right: 4rem;
@@ -317,18 +325,18 @@ background: linear-gradient(to right, #71B280, #134E5E);
     margin-top: 4rem;
     margin-bottom: 1rem;
     color: $color-secondary;
-    @include upTodown(2s);
+    @include upTodown(3s);
     
     
     
 }
 .about-text p {
-    font-family: $font-roboto;
-    font-weight: 200;
-    font-size: 1.7rem;
+    
     padding-top: 3rem;
-    text-align: justify;
     line-height: 150%;
+    font-family:$font-abel;
+    font-size: 2rem;
+    font-weight: 400;
 }
 
 .link{

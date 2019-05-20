@@ -1,4 +1,31 @@
 @charset "UTF-8";
+@keyframes shake {
+  0% {
+    opacity: 0;
+    transform: translateX(0.5rem); }
+  50% {
+    opacity: 1;
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0rem); } }
+
+@keyframes upTodown {
+  0% {
+    opacity: 0;
+    transform: translateY(-5rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0rem); } }
+
+@keyframes appearWords {
+  0% {
+    opacity: 0; }
+  75% {
+    opacity: .5; }
+  100% {
+    opacity: 1; } }
+
 *,
 *::after,
 *::before {
@@ -9,8 +36,7 @@
 body {
   position: relative;
   height: 100%;
-  padding: 2%;
-  font-family: "Abel", sans-serif;
+  padding: 2% 0 0 2%;
   box-sizing: border-box; }
 
 html {
@@ -32,14 +58,14 @@ html {
     font-size: 6rem;
     float: left;
     animation: upTodown 2s ease-out backwards 0s;
-    color: #ffe11c;
+    color: #f1c40f;
     text-decoration: none; }
   .navigation-menu__logo-box__logo2 {
     font-family: "Nunito", sans-serif;
     font-size: 3rem;
     float: left;
     animation: upTodown 2s ease-out backwards 0s;
-    color: #ffe11c;
+    color: #f1c40f;
     text-decoration: none; }
   .navigation-menu__primary-heading {
     width: 100%;
@@ -51,16 +77,16 @@ html {
     z-index: 200; }
     .navigation-menu__primary-heading__text {
       color: #fff;
-      font-family: 'Josefin Sans', sans-serif;
-      animation: appearWords 5s 1s ease-out backwards;
+      font-family: "Abel", sans-serif;
+      animation: appearWords 2s 1s ease-out backwards;
       position: absolute;
       top: 50%;
-      left: 60%;
+      left: 50%;
       transform: translate(-50%, -50%);
-      width: 100%; }
+      width: 90rem; }
       .navigation-menu__primary-heading__text__main {
         text-transform: uppercase;
-        font-size: 4.5rem;
+        font-size: 5rem;
         font-weight: 800;
         letter-spacing: 3rem;
         display: block; }
@@ -91,53 +117,27 @@ html {
       animation: appearWords .5s 2s ease-out backwards;
       font-size: 1.6rem;
       display: inline-block;
-      background-color: #ffe11c; }
+      background-color: #f1c40f; }
   .btn:hover {
     animation: shake 2s ease backwards;
     color: #000; }
 
-@keyframes shake {
-  0% {
-    opacity: 0;
-    transform: translateX(0.5rem); }
-  50% {
-    opacity: 1;
-    transform: translateX(-1rem); }
-  100% {
-    opacity: 1;
-    transform: translateX(0rem); } }
-
-@keyframes upTodown {
-  0% {
-    opacity: 0;
-    transform: translateY(-5rem); }
-  100% {
-    opacity: 1;
-    transform: translateY(0rem); } }
-
-@keyframes appearWords {
-  0% {
-    opacity: 0; }
-  75% {
-    opacity: .5; }
-  100% {
-    opacity: 1; } }
-
 .section-box {
-  height: 5.5rem;
+  height: 7rem;
   width: 25rem;
-  border-bottom: 0.2rem solid #ffe11c;
+  border-bottom: 0.2rem solid #f1c40f;
   position: absolute;
   position: relative;
   left: 42%;
   margin-top: 7%;
-  margin-bottom: 7%; }
+  margin-bottom: 10%; }
   .section-box__section-title {
     color: #0c6b5d;
     text-align: center;
     text-transform: uppercase;
-    font-size: 4rem;
-    animation: upTodown 2s ease-out backwards 1s; }
+    font-size: 5rem;
+    animation: upTodown 2s ease-out backwards 1s;
+    padding-bottom: 4rem; }
   .section-box__section-text {
     position: absolute;
     color: #0c6b5d;
@@ -163,10 +163,10 @@ html {
 
 .my-0:hover {
   text-decoration: none;
-  color: #ffe11c; }
+  color: #f1c40f; }
 
 .card {
-  background: #ffe11c;
+  background: #f1c40f;
   background: -webkit-linear-gradient(to right, #71B280, #134E5E);
   background: linear-gradient(to right, #71B280, #134E5E); }
 
@@ -184,7 +184,7 @@ html {
 
 .container {
   max-width: 94rem;
-  height: 95vh;
+  height: 110vh;
   margin: 0 auto;
   padding-left: 4rem;
   padding-right: 4rem;
@@ -204,22 +204,21 @@ html {
   margin-top: 4rem;
   margin-bottom: 1rem;
   color: #0c6b5d;
-  animation: upTodown 2s ease-out backwards 2s; }
+  animation: upTodown 2s ease-out backwards 3s; }
 
 .about-text p {
-  font-family: "Roboto", sans-serif;
-  font-weight: 200;
-  font-size: 1.7rem;
   padding-top: 3rem;
-  text-align: justify;
-  line-height: 150%; }
+  line-height: 150%;
+  font-family: "Abel", sans-serif;
+  font-size: 2rem;
+  font-weight: 400; }
 
 .link {
   text-decoration: none; }
 
 .link:hover {
   text-decoration: none;
-  color: #ffe11c; }
+  color: #f1c40f; }
 
 .myphoto {
   float: right;
@@ -339,7 +338,7 @@ html {
   color: #f2dce7; }
 
 .copyright a:hover {
-  color: #ffe11c;
+  color: #f1c40f;
   text-decoration: none; }
 
 .group::before,
@@ -352,5 +351,3 @@ html {
 
 .group {
   zoom: 1; }
-
-

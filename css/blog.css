@@ -1,4 +1,12 @@
 @charset "UTF-8";
+@keyframes upTodown {
+  0% {
+    opacity: 0;
+    transform: translateY(-5rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0rem); } }
+
 *,
 *::after,
 *::before {
@@ -28,21 +36,23 @@ body {
     font-family: "Nunito", sans-serif;
     font-size: 6rem;
     float: left;
-    color: #ffe11c;
-    text-decoration: none; }
+    color: #f1c40f;
+    text-decoration: none;
+    animation: upTodown 2s ease-out backwards 0s; }
     .navigation-menu__logo-box__logo1:hover {
       text-decoration: none;
-      color: #ffe11c;
+      color: #f1c40f;
       opacity: 0.9; }
   .navigation-menu__logo-box__logo2 {
     font-family: "Nunito", sans-serif;
     font-size: 3rem;
     float: left;
-    color: #ffe11c;
-    text-decoration: none; }
+    color: #f1c40f;
+    text-decoration: none;
+    animation: upTodown 2s ease-out backwards 0s; }
     .navigation-menu__logo-box__logo2:hover {
       text-decoration: none;
-      color: #ffe11c;
+      color: #f1c40f;
       opacity: 0.9; }
 
 .container {
@@ -58,7 +68,7 @@ body {
   width: 20rem; }
 
 .sub-bar h1 {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 5rem;
   color: #0c6b5d;
   padding-top: 5rem;
@@ -78,7 +88,7 @@ body {
     font-size: 1.2rem; }
 
 small a:hover {
-  color: #ffe11c;
+  color: #f1c40f;
   text-decoration: none; }
 
 .main-content {
@@ -98,11 +108,14 @@ small a:hover {
   box-shadow: 0 0.4rem 1rem #5c6d6b; }
 
 .mt-0 {
-  line-height: 6rem;
+  line-height: 140%;
   color: #0c6b5d;
   font-family: "Nunito", sans-serif;
   font-size: 3rem;
   width: 70rem; }
+
+.media {
+  margin-bottom: 5rem; }
 
 .blog-title:hover,
 .blog-title h4:hover {
@@ -118,7 +131,7 @@ small a:hover {
 
 .read-more:hover {
   text-decoration: none;
-  color: #ffe11c; }
+  color: #f1c40f; }
 
 .list-unstyled {
   margin-bottom: 15rem;
@@ -193,7 +206,7 @@ small a:hover {
   color: #f2dce7; }
 
 .copyright a:hover {
-  color: #ffe11c;
+  color: #f1c40f;
   text-decoration: none; }
 
 .group:before,

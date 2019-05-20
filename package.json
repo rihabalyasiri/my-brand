@@ -12,7 +12,8 @@
   "scripts": {
     "build-css": "node-sass sass/home.scss  css/home.css -w",
       "make-css": "node-sass sass/blog.scss  css/blog.css -w",
-      "transfer-css": "node-sass sass/footer-blog.scss  css/footer-blog.css -w"
+      "transfer-css": "node-sass sass/footer-blog.scss  css/footer-blog.css -w",
+      "do-css": "node-sass sass/second-blog.scss  css/second-blog.css -w"
  
   },
   "repository": {

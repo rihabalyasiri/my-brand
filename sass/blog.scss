@@ -1,4 +1,4 @@
-$color-primary: #ffe11c;
+$color-primary: #f1c40f;
 $color-secondary:#0c6b5d;
 
 $color-white:#fff;
@@ -13,6 +13,12 @@ $font-nunito:'Nunito', sans-serif;
 $font-raleway:'Raleway', sans-serif;
 $font-roboto:'Roboto',sans-serif;
 
+
+@mixin upTodown($delay) {
+    animation: upTodown 2s ease-out backwards $delay;
+}
+
+
 @mixin style-logo($size) {
     
     font-family: $font-nunito;
@@ -20,6 +26,21 @@ $font-roboto:'Roboto',sans-serif;
     float:left;
     color: $color-primary;
     text-decoration: none;
+    @include upTodown(0s);
+}
+
+
+
+@keyframes upTodown {
+    0% {
+        opacity: 0;
+        transform: translateY(-5rem);
+    }
+    
+    100% {
+        opacity: 1;
+         transform: translateY(0rem);
+    }
 }
 
 
@@ -104,7 +125,7 @@ body {
     width: 20rem;
 }
 .sub-bar h1 {
-    font-weight: normal;
+    font-weight: 400;
     font-size: 5rem;
     color: $color-secondary;
     padding-top: 5rem;
@@ -159,12 +180,18 @@ small a:hover {
     box-shadow: 0 .4rem 1rem $color-dark-gray;
 }
 .mt-0 {
-    line-height: 6rem;
+    line-height: 140%;
     color:  $color-secondary;
     font-family: $font-nunito;
     font-size: 3rem;
     width: 70rem;
 }
+
+.media {
+    margin-bottom: 5rem;
+}
+
+
 .blog-title:hover,
 .blog-title h4:hover{
     
